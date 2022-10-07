@@ -7,8 +7,8 @@ import Notification from './notification';
 
 @Entity()
 class Camera extends BasicEntity {
-  @Column('varchar', { name: 'hls_address', length: 255 })
-  hlsAddress!: string;
+  @Column('varchar', { name: 'stream_key', length: 255 })
+  streamKey!: string;
 
   @Column('varchar', { length: 255 })
   name!: string;
