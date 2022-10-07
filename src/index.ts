@@ -46,6 +46,14 @@ app.use(morgan(REAL_SETTING.morganMode));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+// CORS
+app.use(
+  cors({
+    origin: true,
+    credentials: true,
+  }),
+);
+
 // Routers
 app.use('/user', userRouter);
 app.use('/camera', cameraRouter);
