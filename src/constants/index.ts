@@ -12,7 +12,7 @@ export const DEV_SETTING = {
 
 export const PROD_SETTING = {
   mode: 'prod',
-  port: '4000',
+  port: '80',
   clientURL: '', // TODO
   domain: '', // TODO
 
