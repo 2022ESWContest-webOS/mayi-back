@@ -11,7 +11,7 @@ class User extends BasicEntity {
   uid!: string;
 
   @Column('varchar', { length: 255 })
-  password!: string;
+  password?: string;
 
   // User:Camera = 1:N
   @OneToMany(() => Camera, (camera) => camera.user)
